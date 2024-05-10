@@ -1,0 +1,5 @@
+.venv
+Dataset/*
+#  all __pycache__  inside the project
+
+*/__pycache__/*

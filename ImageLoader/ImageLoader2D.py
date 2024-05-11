@@ -1,12 +1,12 @@
 import glob
-
+import os
 import numpy as np
 from PIL import Image
 from skimage.io import imread
 from tqdm import tqdm
 import cv2
-folder_path = "/content/drive/MyDrive/DUCK-Net-2/ETIS-LaribPolypDB/" # Add the path to your data directory
-
+folder_Names = 'ETIS-LaribPolypDB'
+folder_path = os.path.join(os.getcwd(), folder_Names) + '/'
 
 def load_data(img_height, img_width, images_to_be_loaded, dataset):
     IMAGES_PATH = folder_path + 'images/'
